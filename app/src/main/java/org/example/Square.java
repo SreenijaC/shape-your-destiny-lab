@@ -8,5 +8,5 @@ public class Square extends Rectangle {
         super(side, side);
     }
 
-    // We inherit getArea(), getPerimeter() from Rectangle - no need to override.
+    // We inherit getArea(), getPerimeter() and numberOfsides from Rectangle - no need to override.
 }
