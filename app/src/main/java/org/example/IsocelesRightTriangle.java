@@ -12,6 +12,7 @@ public class IsocelesRightTriangle extends RightTriangle {
         super(leg, leg);
     }
 
-    // getArea() and getPerimeter() and numberOfSides from RightTriangle are correct,
+    // getArea() and getPerimeter() and numberOfSides from RightTriangle are
+    // correct,
     // because they use two equal legs passed in.
 }

@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AppTest {
   private static final double DELTA = 1e-6; // margin for floating point comparison
 
-    // test Circle class
+  // test Circle class
   @Test
   void testCircle() {
     Circle circle = new Circle(2.0);
@@ -32,7 +32,7 @@ public class AppTest {
     assertEquals(3, rt.numberOfSides()); // Triangle has 3 sides
   }
 
-// test Square class
+  // test Square class
   @Test
   void testSquare() {
     Square square = new Square(5.0);
@@ -49,5 +49,21 @@ public class AppTest {
     double hyp = 4 * Math.sqrt(2);
     assertEquals(8 + hyp, isoRt.getPerimeter(), DELTA); // Perimeter = 2 * leg + hypotenuse
     assertEquals(3, isoRt.numberOfSides()); // Triangle has 3 sides
+  }
+
+  // Test Parallelogram class
+  @Test
+  void testParallelogram() {
+    // base = 6, side = 4, height = 3
+    Parallelogram p = new Parallelogram(6, 4, 3);
+
+    // Area = base × height = 18
+    assertEquals(18.0, p.getArea(), DELTA);
+
+    // Perimeter = 2 × (6 + 4) = 20
+    assertEquals(20.0, p.getPerimeter(), DELTA);
+
+    // Parallelogram has 4 sides
+    assertEquals(4, p.numberOfSides());
   }
 }

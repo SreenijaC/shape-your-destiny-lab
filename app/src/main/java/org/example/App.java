@@ -62,5 +62,6 @@ public class App {
             System.out.println("Number of sides = " + poly.numberOfSides());
         }
         System.out.println();
+
     }
 }

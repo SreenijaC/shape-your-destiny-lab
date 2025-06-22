@@ -1,11 +1,11 @@
 package org.example;
 
-// Abstract class: can't create instances directly only subclasses can.
-// It defines methods all shapes must implement.
+// abstract class: can't create instances directly only subclasses can.
+// it defines methods all shapes must implement.
 public abstract class Shape {
-    // Method to calculate area of shape.
+    // method to calculate area of shape.
     public abstract double getArea();
 
-    // Method to get perimeter (or circumference) of shape.
+    // method to get perimeter (or circumference) of shape.
     public abstract double getPerimeter();
 }

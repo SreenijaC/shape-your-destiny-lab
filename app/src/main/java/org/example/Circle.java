@@ -2,7 +2,7 @@ package org.example;
 
 // Circle is a shape with radius, area = πr^2, perimeter = 2πr.
 public class Circle extends Shape {
-    private double radius;  
+    private double radius;
 
     // Constructor initializing radius.
     public Circle(double radius) {
