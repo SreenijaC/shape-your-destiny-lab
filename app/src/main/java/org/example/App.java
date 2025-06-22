@@ -25,5 +25,19 @@ public class App {
         System.out.println("Right Triangle:");
         System.out.printf("Area = %.2f\n", triangle.getArea());
         System.out.printf("Perimeter = %.2f\n", triangle.getPerimeter());
+
+        // Square with side 5
+        Square square = new Square(5);
+        System.out.println("Square:");
+        System.out.printf("Area = %.2f\n", square.getArea());
+        System.out.printf("Perimeter = %.2f\n", square.getPerimeter());
+        System.out.println();
+
+        // Isoceles right triangle with legs 4
+        IsocelesRightTriangle isoTriangle = new IsocelesRightTriangle(4);
+        System.out.println("Isoceles Right Triangle:");
+        System.out.printf("Area = %.2f\n", isoTriangle.getArea());
+        System.out.printf("Perimeter = %.2f\n", isoTriangle.getPerimeter());
+
     }
 }
